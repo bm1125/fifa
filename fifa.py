@@ -43,7 +43,7 @@ class fifa():
 
 class api():
 
-	headers = {'x-rapidapi-key':'d2f0cce435mshe3d1fd9eac675dfp16e06fjsn8f7f976b50ea','x-rapidapi-host':'api-football-v1.p.rapidapi.com'}
+	headers = {'x-rapidapi-key':'{API_KEY}','x-rapidapi-host':'api-football-v1.p.rapidapi.com'}
 	api_dict = {'leagues':'https://api-football-v1.p.rapidapi.com/v2/leagues/country/', 'teams':'https://api-football-v1.p.rapidapi.com/v2/teams/league/','lineups':'https://api-football-v1.p.rapidapi.com/v2/lineups/','squads':'https://api-football-v1.p.rapidapi.com/v2/players/squad/','league_fixtures':'https://api-football-v1.p.rapidapi.com/v2/fixtures/league/'}
 
 	@staticmethod
