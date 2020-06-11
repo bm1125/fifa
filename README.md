@@ -1,8 +1,12 @@
 # fifa
 Football predictions using team rankings by EA
 
-Following this: https://towardsdatascience.com/predicting-premier-league-odds-from-ea-player-bfdb52597392
+I came across this article https://towardsdatascience.com/predicting-premier-league-odds-from-ea-player-bfdb52597392 and wanted to reproduce the results.
 
-I plan to evnetually test this Idea. I have also uploaded my final file for this idea. It is in the data folder under the name
-final.csv .
-In this file, each row represent a match with the 0-35 first cells values are the player-api of the api service I have used (api-football.com) . The problem is that there are too many players missing in the fifa players datasets that has been uploaded on kaggle. So I plan to scrape all players from sofifa.com by myself and then try it again.
+I encountered some problems with fifa players dataset that is available on kaggle so for now I decided to scrape myself team rankings (def, mid, att, overall) and see if a neural network predictions could be valuable. Later on I plan on adding more paremeters to each team and maybe building my own players dataset and using it in the same way as in the article above.
+
+I've built two packages to make it easier for me handling the data on jupyter notebook. In the notebook I have uploaded here there's detailed explanation about each package and its methods.
+
+
+
+
