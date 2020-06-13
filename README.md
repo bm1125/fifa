@@ -28,7 +28,7 @@ Following the instructions on the notebook will lead you to have the final dataf
 
 # The model
 
-I am not really familiar with neural networks algroithms. I know the basics of how neural networks works but actually traning a model is something I haven't done before and at first I felt blind actually trying to figure how many layers I should use, how many nodes and what parameters I should set. After a lot of trial and error I set the model as follows:
+I am not really familiar with neural networks algroithms. I know the basics of how neural networks works but actually traning a model is something I haven't done before and at first I felt really blind when I was trying to figure how many layers I should use, how many nodes and what parameters I should set. After a lot of trial and error I set the model as follows:
 
 ```python
 def setModel(dropout, first_layer, second_layer):
