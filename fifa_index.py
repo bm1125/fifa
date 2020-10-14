@@ -1,15 +1,13 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests
-import googletrans
-from googletrans import Translator
-from langdetect import detect
+
 import unicodedata
 
 class fifaIndex():
 
-	trans = Translator()
-	global_link = 'https://www.fifaindex.com/teams/fifa/'
+	
+	global_link = 'https://www.fifaindex.com/teams/'
 	_leagues = list()
 
 	def __init__(self):
@@ -94,3 +92,9 @@ class fifaIndex():
 		if not self.teams:
 			return
 		return pd.DataFrame.from_dict({(i,j): self.teams[i][j] for i in self.teams.keys() for j in self.teams[i].keys()}, orient = 'index')
+
+
+fifa = fifaIndex()
+fifa.setVersions(17)
+fifa.scrapeLeagues(13)
+
